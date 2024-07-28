@@ -6,11 +6,33 @@ width: 1728
 12vh : 134px
 
 */
+/* Hide scrollbar for Chrome, Safari, and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.chat-icon{
+    height: 10.8vh;
+    width: 10.8vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    box-shadow: 4px 15px 35px 0px #00000040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1vh;
+    right: 6vw;
+
+}
+.chat-icon img{
+    height: 8vh;
 }
 
 .navbar{
@@ -21,6 +43,8 @@ width: 1728
     height: 12vh;    
     width: 100vw;
     font-size: 12vh;
+    position: fixed;
+    top: 0;
 }
 
 .logo{
@@ -90,4 +114,98 @@ select:focus {
 
 .hamburger-btn{
     height: 40%;
+}
+
+.main-content{
+    margin-top: 25.9vh;
+    display: flex;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    
+}
+
+.middle{
+    display: flex;
+    width: 85vw;
+}
+
+.hero-image{
+    height: 45vh;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.input-text{
+    width: 70%;
+    margin-left: 3vw;
+    padding: 1em;
+    background: #E5D8FF;
+    border: 6px solid #FFFFFF;
+    box-shadow: 3px 5px 27px 0px #00000040 inset;
+    border-radius: 20px; 
+    font-family: "DM Sans";
+    font-size: 3vh;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: left;   
+    resize: none;
+}
+
+
+.social-icons{
+    position: sticky;
+    left:100%;
+    top:50%;
+    width:5vw;
+    margin-right: 0.5vw;
+    transform: translateY(-100%);
+    
+}
+
+
+.icon{
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    width: 5vw;
+    height: 5vw;
+    border: 0.15em solid #000000;
+    border-radius: 11px;
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5.9vw;
+    margin-top: -16vh;
+    font-family: "DM Sans";
+    font-size: 3vh;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: white;
+    
+}
+
+.cards div{
+    width: 19.5vw;
+    height: 13.1vh;
+    box-shadow: 0px 9px 31px 0px #00000066;
+    border-radius: 11px;
+    padding: 2vh;
+
+}
+
+.card-1{
+    background-color: #929DFF;
+}
+.card-2{
+    background-color: #734CF2;
+}
+.card-3{
+    background-color: #D288FF;
+}
+.card-4{
+    background-color: #000000;
 }
