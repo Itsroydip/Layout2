@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius+Unicase:wght@400;700&family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* height:1117
 width: 1728
 12vh : 134px
@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
     position: fixed;
     bottom: 1vh;
     right: 6vw;
+    z-index: 1;
 
 }
 .chat-icon img{
@@ -208,4 +209,102 @@ select:focus {
 }
 .card-4{
     background-color: #000000;
+}
+
+.info-body{
+    background: #483EFF;
+    margin: 20vh 5.9vw  10vh 5.9vw;
+    display: flex;
+    border-radius: 21px;
+    color: white;
+}
+
+.left-body{
+    /* padding:1em; */
+}
+
+.left-body div{
+    height: 12vh;
+    width: 23vw;
+    background: #483EFF;
+    margin: 8vh 5vh;
+    font-family: "DM Sans";
+    font-size: 3.5vh;
+    line-height: 6vh;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    border: 5px solid #FFFFFF
+}
+
+#selected{
+    box-shadow: 0px 6px 35px 0px #00000063;
+    background: #BCE0F6;
+    color: #000000;
+    border: none;
+
+}
+
+.right-body{
+    background-color: white;
+    margin: 2.5vh;
+    width: 100%;
+    border-radius: 1.8vh;
+    position: relative;
+    color: #04285A;
+    
+}
+
+.right-body h1{
+    font-family:'Inter';
+    font-size: 3.5vh;
+    font-weight: 700;
+    line-height: 3.8vh;
+    letter-spacing: 0.105em;
+    text-align: left;
+    margin: 10vh 7vh 5vh 7vh;
+}
+
+.right-body p{
+    font-family: 'Roboto';
+    font-size: 3vh;
+    font-weight: 500;
+    line-height: 3vh;
+    letter-spacing: 0.105em;
+    text-align: left;
+    margin: 4vh 11vh;
+
+}
+
+.right-body p span{
+    font-size: 2.6vh;
+    font-weight: 400;
+    line-height: 2.8vh;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.next-button{
+    width: 11.5vw;
+    height: 7vh;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    position: absolute;
+    right: 4vh;
+    bottom: 4vh;
+    font-size: 2.7vh;
+    font-weight: 400;
+    line-height: 2.8vh;
+    letter-spacing: 0.05em;
+    text-align: center;
+
+}
+
+.next-button img{
+    width: 3.4vh;
 }
